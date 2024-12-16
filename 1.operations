@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+         Scanner sc=new Scanner(System.in);
+         int a=sc.nextInt();
+        int b=sc.nextInt();
+        sc.nextLine();
+        String op=sc.nextLine();
+        if(op.equals("add")){
+            int add=a+b;
+            System.out.print(+add);
+        }
+        else if(op.equals("sub")){
+            int sub=a-b;
+            System.out.print(+sub);
+        }
+        else if(op.equals("mul")){
+            int mul=a*b;
+            System.out.print(+mul);
+        }
+        else{
+            int div=a/b;
+            System.out.print(+div);
+        }
+}
+}
